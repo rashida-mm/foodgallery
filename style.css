@@ -1,0 +1,167 @@
+h2,h1{
+    font-family: 'Caveat', cursive;   
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin: 40px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(238, 49, 81);
+}
+
+.banner img{
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+}
+h3{
+    padding: 10px;
+    font-size: xx-large;
+    margin: 10px;
+}
+.row{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    border-radius: 100px;
+    justify-content: space-evenly;
+}
+.row img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+}
+.col{
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.col:hover{
+    transform: scale(1.09);
+}
+.row1{
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row2{
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row3{
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    border-radius: 10px;
+    width:90px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(255, 79, 79);
+    border: none;
+}
+a{
+text-decoration: none;
+color: whitesmoke;
+}
+
+footer{
+    background-color:black;
+    height: 102px;
+    padding: 10px;
+    
+}
+#foot{
+    padding: 10px;
+    color:white;
+    text-align: center;
+}
+.pic img{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+
+@media screen and (max-width:400px) {
+    nav{
+        font-size: 10px;
+        height: 20px;
+       width: 400px;
+       padding: 5px;
+    }
+    nav ul li a{
+        margin:5px;
+    justify-content: space-evenly;
+    }
+    .banner img{
+    width: 400px;
+    height: 300px;
+} 
+    .row{
+        display:inline;
+        height: 1100px;
+    }
+    .row .col{
+        margin-bottom: 20px;
+    }
+
+    .row1{
+        display: block;
+        height: 850px;
+    }
+    .row1 .col{
+        margin-bottom: 90px;
+    }
+    .row2{
+        display:flow-root;
+        height: 1200px;
+    }
+    .row2 h3{
+        margin-top: 90px;
+    }
+    .row2 .col{
+        margin-bottom: 220px;
+    }
+    .row3{
+        display:grid;
+        height: 1700px;
+    }
+    .row3 .col{
+        margin-bottom: 100px;
+    }
+}
